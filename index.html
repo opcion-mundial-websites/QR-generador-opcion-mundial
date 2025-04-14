@@ -1,0 +1,140 @@
+
+
+<!DOCTYPE html>
+<html lang="es-CO-CTG-ELYONYIREH">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QRgenerador-Opción-Mundial.org</title>
+  <meta name="description" content="Generador de códigos QR para fundacion opcion mundial. Crea y personaliza tus propios códigos QR fácilmente.">
+  <meta name="keywords" content="QRgeneradorBienestar, generador de códigos QR, fundacion opcion mundial, QR codes">
+<link rel="shortcut icon" href="LOGO-OPCION-MUNDIAL.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="QR-generador-opcion-mundial.css">
+</head>
+<body>
+
+
+
+  <!-- Contenedor principal de la página -->
+  <div class="animation-container">
+
+
+
+
+    <!-- Contenedor animado -->
+    <div class="animate__animated animate__zoomIn slow-zoomIn">
+
+
+
+      <!-- Reloj -->
+      <header>
+
+        <h4>HORA ACTUAL <i class="fas fa-clock"></i></h4>
+        <p id="myClock"></p>
+
+      </header>
+
+    
+
+
+
+      <hr>
+
+
+      <!-- Logo opcion mundial -->
+
+      <div class="animate__animated animate__bounce slow-bounce">
+
+        <header>
+            <a href="https://fundacionopcionmundial.org/" target="_blank" aria-label="Enlace ala pagina web de opcion-mundial">
+                <img class="logo" src="LOGO-OPCION-MUNDIAL.png" alt="logo de opcion-mundial">
+            </a>            
+        </header>
+
+      </div>
+
+
+
+
+
+      <!-- Título principal -->
+      <main>
+
+        <h1>Generador QR de opción Mundial</h1>
+      
+
+
+
+        <!-- Formulario para generar QR -->
+
+        <form id="qrForm" onsubmit="event.preventDefault(); generateQR();">
+
+          <h2 class="fundacionopcionmundial">Cualquier Tipo De Enlaces:</h2>
+
+         
+            <input type="text" id="escribe" name="enlaces" placeholder="INGRESA EL ENLACE AQUI" aria-label="Campo para ingresar enlace" required>
+     
+      
+          <button type="submit">GENERAR QR</button>
+
+        </form>
+
+
+
+
+
+
+        <!-- Mensaje de error -->
+        <p id="error-message" class="erroresopcionmundial" aria-live="polite"></p>
+
+
+        <!-- Canvas para mostrar el QR generado -->
+
+        <canvas id="qr"></canvas>
+
+  
+
+
+        <!-- Enlace para descargar el QR -->
+        <a id="downloadLink" download="QRCode.png" onclick="checkQRBeforeDownload()">DESCARGAR QR</a>
+
+
+        
+        
+
+        <!-- Mensaje de éxito -->
+        <div id="mensajeExito" style="display:none;" aria-live="polite">
+          DESCARGA EXITOSA <i class="fas fa-thumbs-up"></i>
+        </div>
+
+
+
+        <!-- my Firma -->
+        <footer>
+          <h3 id="copyright">Fundación opción mundial <i class="fas fa-book-reader"></i></h3>
+        </footer>
+
+      </main>
+
+
+
+
+      <!-- Cargar scripts al final para mejorar rendimiento -->
+       
+      <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js" async></script>
+
+
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<script src="QR-generador-opcion-mundial.js"></script>
+
+

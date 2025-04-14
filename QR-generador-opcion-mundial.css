@@ -1,0 +1,815 @@
+
+
+.slow-zoomIn {
+    
+    animation-duration: 8s; /* Ajusta la duración a 8 segundos (puedes cambiar este valor) */
+}
+
+
+
+  .slow-bounce {
+
+    animation-duration: 12s;
+
+  }
+
+
+
+
+
+  body {
+
+  padding-top: 5px;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+body::after {
+
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Fondo-educativo-elyonyireh.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Cubre toda el área */
+  background-attachment: fixed;
+  background-position: center; /* Centra la imagen */
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+
+}
+
+
+
+
+
+#myClock {
+        
+        margin-top: 0px;
+         color: #9ACD32;
+           font-size: 12px;
+           font-family: cursive;
+          transition: transform 0.5s;
+           font-weight: bold;
+           text-shadow: 10px 10px
+            8px rgba(0, 0, 0, 0.9);
+      
+ }
+
+
+
+#myClock:hover {
+ 
+ filter: brightness(120%);
+ color: #116faa;
+ transform: scale(1.6);
+}
+
+
+
+
+
+
+
+p {
+
+
+margin-right: 60%;
+
+}
+
+
+
+
+
+
+h4 {
+
+filter: brightness(150%);
+color: white;
+font-size: 10px;
+margin-right: 60%;
+font-weight: bold;
+font-style: italic;
+font-family: 'Courier New', cursive;
+
+}
+
+
+
+
+
+
+.logo {
+
+animation-name: myAnimation;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+margin-top: 200px;
+filter: brightness(120%);
+background-color: none;
+width: 300px;
+transition: transform 0.5s;
+height: 200px;
+cursor: -webkit-grabbing;
+}
+
+
+
+.logo:hover {
+
+transform: scale(1.5);
+transition: transform 0.9s ease-in-out;
+box-shadow: 25px 25px 25px #9ACD32;
+transform: rotate(360deg);
+}
+
+
+
+@keyframes myAnimation {
+
+0% { opacity: 1; }
+50% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+h1 {
+
+
+  transition: all 0.5s;
+  color: #9ACD32;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-style: italic;
+ font-family: 'TeXGyreCursor-Regular', monospace;
+}
+
+
+h1:hover {
+
+filter: brightness(100%);
+color:  #116faa;
+transform: scale(1.4);
+}
+
+
+
+
+
+
+
+
+.fundacionopcionmundial {
+
+filter: brightness(150%);
+margin-top: 50px;
+font-family: 'TeXGyreCursor-Regular', monospace;
+color: #FDFEFE;
+font-size: 1.8em;
+font-style: italic;
+font-weight: bold;
+
+}
+
+
+
+
+
+
+
+input, #escribe[type="text"] {
+
+
+  color: rgb(0, 0, 0); 
+  width: 350px;
+  font-family: 'TeXGyreCursor-Regular', monospace;
+  padding: 15px 80px;
+  margin: 150px 25px;
+  font-weight: bold;
+  box-sizing: border-box;
+  border: 5px solid  #9ACD32;
+  font-style: italic;
+  border-radius: 50px;
+  cursor: -webkit-grabbing;
+}
+
+input::placeholder, #escribe::placeholder {
+
+  font-family: 'TeXGyreCursor-Regular', monospace;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+button,#downloadLink {
+
+font-style: italic;
+width: 150px;
+background: linear-gradient(to left,  transparent 50%, #9ACD32 50%);
+background-size: 200% 200%; /* Cambio aquí */
+background-position: right bottom; /* Cambio aquí */
+filter: brightness(100%);
+color: white;
+text-shadow: 8px 8px 18px rgba(0, 0, 0, 8);
+font-family: 'Courier New', cursive;
+padding: 15px 0 15px;
+font-weight: bold;
+box-shadow: 0 0 20px #eee;
+text-align: center;
+transition: all 0.6s;
+text-decoration: none;
+display: inline-block;
+font-size: 18px;
+margin: 15px 80px;
+border: 2px solid  white;
+border-radius: 5px;
+cursor: -webkit-grabbing;
+
+}
+
+button:hover {
+
+color: rgb(255, 255, 255);
+text-shadow: 8px 8px 18px rgba(0, 0, 0, 8);
+border: 2px solid #9ACD32;
+font-family: 'Courier New', cursive;
+filter: brightness(100%);
+font-weight: bold;
+background-position: left bottom; /* Cambio aquí */
+transform: scale(1.2);
+transform-origin: top left;
+  
+}
+
+
+
+
+#downloadLink {
+
+
+  background: linear-gradient(to left,  transparent 50%, #9ACD32 50%);
+  background-size: 200% 200%; /* Cambio aquí */
+  background-position: right bottom; /* Cambio aquí */
+  filter: brightness(100%);
+  margin: -5px 65%;
+  
+  
+  }
+  
+  
+  #downloadLink:hover{
+  
+  
+  color: rgb(255, 255, 255);
+  text-shadow:  10px 10px 20px rgba(0, 0, 0, 8);
+  border: 2px solid #9ACD32;
+  font-family: 'Courier New', cursive;
+  filter: brightness(100%);
+  font-weight: bold;
+  background-position: left bottom; /* Cambio aquí */
+  transform: scale(1.2);
+  transform-origin: top right;
+  
+  }
+
+
+
+
+  
+#qr {
+
+
+animation-name: fundacionopcionmundial;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+border-radius: 40px;
+padding: 5px;
+background: url("LOGO-OPCION-MUNDIAL.png");
+background-size: 50px 50px;
+filter: brightness(60%);
+display: inline-block;
+ height: 90px;
+width: 90px;
+display: block;
+margin: auto;
+cursor: zoom-in;
+  
+}
+
+
+@keyframes fundacionopcionmundial {
+
+
+0% { border: 5px solid #17202A; } 
+20% { border: 5px solid #1B2631; }
+40% { border: 5px solid #424949; } 
+60% { border: 5px solid #4D5656; }
+80% { border: 5px solid #000000; } 
+100% { border: 5px solid #9ACD32; } 
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Estilos para el modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.5s ease;
+  cursor: zoom-in;
+}
+
+
+/* Estilos para el contenido del modal */
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: scaleUp 0.5s ease;
+}
+
+
+
+
+/* Estilos para el botón de cerrar */
+
+.close-button {
+  position: absolute;
+  top: -20px;
+  right: -2px;
+  font-size: 65px;
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  background: none;
+  border: none;
+  outline: none;
+  transition: transform 0.3s ease;
+  cursor: grab;
+}
+
+
+
+
+/* Animación al pasar el mouse sobre el botón de cerrar */
+.close-button:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+
+
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+
+
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}
+
+
+
+@keyframes scaleUp {
+  from {
+      transform: scale(0.5);
+  }
+  to {
+      transform: scale(1);
+  }
+}
+
+
+
+@keyframes scaleDown {
+  from {
+      transform: scale(1);
+  }
+  to {
+      transform: scale(0.5);
+  }
+}
+
+
+
+
+
+
+
+#copyright {
+
+filter: brightness(150%);
+color: #9ACD32;
+font-size: 10px;
+padding-right: 60%;
+font-style: italic;
+font-family: 'Courier New', cursive;
+
+}
+
+
+
+
+
+#mensajeExito {
+
+  color: rgb(83, 252, 24);
+  font-size: 25px;
+  position: relative;
+  left: 40%; /* Ajusta este valor según sea necesario */
+  top: -220px;  
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'TeXGyreCursor-Regular', monospace;
+
+}
+
+
+
+
+#error-message {
+  
+  color: rgb(255, 0, 0); /* Rojo puro */
+  filter: brightness(10000%); /* Brillo extremadamente alto */
+  font-size: 25px;
+  margin: 0 auto; /* Centra el texto horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  font-family: 'TeXGyreCursor-Regular', monospace;
+  margin-top: 50px;
+  bottom: 0%; /* Posiciona el mensaje en la parte inferior de la página */
+  width: 100%; /* Asegura que el mensaje se extienda a lo ancho de la página */
+  margin-bottom: 50px; /* Agrega un margen inferior para separar el texto del borde */
+  font-weight: bold;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPOSIVE DE LA PAGINA */
+
+
+
+
+
+
+
+/* Media query para pantallas de hasta 760px */
+
+
+@media screen and (max-width: 760px) {
+
+
+  body, body::after {
+      background-attachment: scroll;
+      background-size: cover; /* Use 'contain' if needed */
+      background-position: center;
+  }
+
+  .animation-container {
+      overflow: hidden;
+  }
+
+  .logo {
+      
+      width: 250px;
+      height: 150px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  #copyright {
+      font-size: 8px;
+  }
+
+  .fundacionopcionmundial {
+      font-size: 16px;
+  }
+
+  #qr {  
+      margin-top: 50px;
+  }
+
+  .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #qr {
+      order: 1; 
+  }
+
+  #downloadLink {
+      order: 1; 
+      margin-top: 50px; 
+      margin: 32.6%;  /* 32 hacia atras, mas a tu izquierda.. y 32 hacia adelante mas a tu derecha*/ 
+      margin-top: 80px;
+  }
+
+  #mensajeExito {
+      font-size: 16px;
+      left: 0%; /* Ajusta este valor según sea necesario */
+      margin-left: 2%;
+      margin-top: 150px; /* Ajusta este valor según necesites */
+  }
+
+  #error-message {
+      font-size: 16px;
+      margin: 0 auto; /* Centra el texto horizontalmente */
+      margin-left: 3px;
+      text-align: center; /* Alinea el texto al centro */
+      filter: brightness(200%);
+      position: fixed; /* Fija el mensaje en la posición especificada */
+      bottom: 80px; /* Posiciona el mensaje 50 píxeles por encima del borde inferior */
+      margin-bottom: 0px; /* Agrega un margen inferior para separar el texto del borde */
+  }
+
+  .modal-content {
+      width: 90%;
+      padding: 15px;
+      border-radius: 8px;
+  }
+
+  .close-button {
+      top: -5px;
+      right: 5px;
+      font-size: 50px;
+  }
+
+  /* Ajustes para el canvas (QR) dentro del modal */
+  .modal-content canvas {
+      width: 80%;
+      height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query para pantallas de hasta 480px */
+
+
+
+@media only screen and (max-width: 480px) {
+
+
+  body, body::after {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .animation-container {
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 150px;
+    height: 125px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #copyright {
+    font-size: 7px;
+  }
+
+  .fundacionopcionmundial {
+    font-size: 14px;
+  }
+
+  #qr {
+    margin-top: 45px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #downloadLink {
+    order: 1;
+    margin-top: 50px;
+    margin: 25%;
+  }
+
+  #mensajeExito {
+    font-size: 14px;
+    margin-left: 1.5%;
+    margin-top: 130px;
+  }
+
+  #error-message {
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    bottom: 70px;
+  }
+
+  .modal-content {
+    width: 88%;
+    padding: 12px;
+    border-radius: 7px;
+  }
+
+  .close-button {
+    top: -4px;
+    right: 4px;
+    font-size: 45px;
+  }
+
+  .modal-content canvas {
+    width: 78%;
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media query para pantallas de hasta 380px */
+
+
+@media only screen and (max-width: 380px) {
+  body, body::after {
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .animation-container {
+    overflow: hidden;
+  }
+
+  .logo {
+    width: 130px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  #copyright {
+    font-size: 6px;
+  }
+
+  .fundacionopcionmundial {
+    font-size: 12px;
+  }
+
+  #qr {
+    margin-top: 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #downloadLink {
+    order: 1;
+    margin-top: 40px;
+    margin: 20%;
+  }
+
+  #mensajeExito {
+    font-size: 12px;
+    margin-left: 1%;
+    margin-top: 120px;
+  }
+
+  #error-message {
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    position: fixed;
+    bottom: 60px;
+  }
+
+  .modal-content {
+    width: 85%;
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  .close-button {
+    top: -4px;
+    right: 4px;
+    font-size: 40px;
+  }
+
+  .modal-content canvas {
+    width: 75%;
+    height: auto;
+  }
+}
+
+
+
